@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 15%;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-image: url('../images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem 15% 5rem 15%;
+  color: #fff;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.header .nav .logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Alata', sans-serif;
+}
+
+.header nav .nav-list a {
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header nav .nav-list a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.header .header-title {
+  margin: 7rem 0;
+}
+
+.header .header-title .header-content {
+  font-size: 8rem;
+  max-width: 70rem;
+  border: 1px solid #fff;
+  padding: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about .about-container {
+  margin-top: 8rem;
+  position: relative;
+}
+
+.about img {
+  width: 70%;
+}
+
+.about .about-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 7rem 0 0 7rem;
+  background: #fff;
+  width: 60rem;
+}
+
+.about .about-content .about-heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about .about-content .about-describe {
+  font-size: 2rem;
+  padding-top: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--Very-Dark-Gray);
+  text-transform: none;
+}
+
+.about .about-content .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.creations {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+
+.creations .creations-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creations .creations-content .creations-heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.creations .creations-content .btn {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid;
+  background: var(--White);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.creations .creations-content .btn:hover {
+  color: var(--White);
+  background: var(--Black);
+  border: 1px solid var(--black);
+}
+
+.creations .creations-grid {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  color: var(--White);
+  font-size: 3rem;
+}
+
+.creations .creations-grid .creations-pic-1 {
+  height: 40rem;
+  background: url(../images/desktop/image-deep-earth.jpg) no-repeat center
+    center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-1-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-2 {
+  height: 40rem;
+  background: url(../images/desktop/image-night-arcade.jpg) no-repeat center
+    center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-2-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-3 {
+  height: 40rem;
+  background: url(../images/desktop/image-soccer-team.jpg) no-repeat center
+    center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-3-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-4 {
+  height: 40rem;
+  background: url(../images/desktop/image-grid.jpg) no-repeat center center /
+    cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-4-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-5 {
+  height: 40rem;
+  background: url(../images/desktop/image-from-above.jpg) no-repeat center
+    center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-5-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-6 {
+  height: 40rem;
+  background: url(../images/desktop/image-pocket-borealis.jpg) no-repeat center
+    center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-6-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-7 {
+  height: 40rem;
+  background: url(../images/desktop/image-curiosity.jpg) center / cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-7-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.creations .creations-grid .creations-pic-8 {
+  height: 40rem;
+  background: url(../images/desktop/image-fisheye.jpg) no-repeat center center /
+    cover;
+  position: relative;
+}
+
+.creations .creations-grid .creations-pic-8-title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.footer {
+  background: var(--Black);
+  color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer .footer-left .footer-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Alata', sans-serif;
+}
+
+.footer .footer-left .footer-list {
+  padding-top: 2rem;
+}
+
+.footer .footer-left .footer-list a {
+  color: var(--White);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.footer .footer-left .footer-list a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .footer-right .footer-social {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.footer .footer-right .footer-social .img {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.footer .footer-right .footer-social .img:hover {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.footer .footer-right .footer-content {
+  font-size: 2rem;
+  color: var(--Dark-Gray);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 2rem 8%;
+    background-image: url('../images/mobile/image-hero.jpg');
+    height: 70vh;
+  }
+
+  .header .nav-list {
+    display: none;
+  }
+
+  .header .header-title .header-content {
+    font-size: 4rem;
+    border: 1px solid #fff;
+    padding: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 2rem 8%;
+  }
+
+  .about-container {
+    text-align: center;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about .about-content {
+    padding: 1rem;
+    width: 100%;
+    position: static;
+  }
+
+  .about .about-content .about-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .about .about-content .about-describe {
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  .creations {
+    margin: 3rem 0 3rem 0;
+  }
+
+  .creations .creations-content .creations-heading {
+    font-size: 3rem;
+  }
+
+  .creations .creations-content .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .creations .creations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .creations .creations-grid .creations-pic-1 {
+    height: 15rem;
+    background: url(../images/mobile/image-deep-earth.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-1-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-2 {
+    height: 15rem;
+    background: url(../images/mobile/image-night-arcade.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-2-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-3 {
+    height: 15rem;
+    background: url(../images/mobile/image-soccer-team.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-3-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-4 {
+    height: 15rem;
+    background: url(../images/mobile/image-grid.jpg) no-repeat center center /
+      cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-4-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-5 {
+    height: 15rem;
+    background: url(../images/mobile/image-from-above.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-5-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-6 {
+    height: 15rem;
+    background: url(../images/mobile/image-pocket-borealis.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-6-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-7 {
+    height: 15rem;
+    background: url(../images/mobile/image-curiosity.jpg) no-repeat center
+      center / cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-7-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .creations .creations-grid .creations-pic-8 {
+    height: 15rem;
+    background: url(../images/mobile/image-fisheye.jpg) no-repeat center center /
+      cover;
+    position: relative;
+  }
+
+  .creations .creations-grid .creations-pic-8-title {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .footer-left .footer-list a {
+    display: block;
+    margin: 2rem 0 0 0;
+  }
+
+  .footer .footer-right {
+    display: block;
+  }
+
+  .footer .footer-right .footer-social {
+    justify-content: center;
+    margin: 3rem 0 1.5rem 0;
+  }
+}
